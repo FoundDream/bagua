@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 
-const SKILL_ROOT = path.resolve(process.cwd(), '..', 'skill');
+const SKILL_ROOT = path.resolve(process.cwd(), 'skill');
 const REF_DIR = path.join(SKILL_ROOT, 'references');
 
 const cache = new Map<string, string>();

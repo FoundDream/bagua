@@ -1,14 +1,14 @@
 # macOS
 .DS_Store
 
-# Node / Next.js (web/)
-web/node_modules/
-web/.next/
-web/out/
-web/.env
-web/.env.local
-web/.env.*.local
-web/*.tsbuildinfo
+# Node / Next.js
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
 
 # Logs
 *.log

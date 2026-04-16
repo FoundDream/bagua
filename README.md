@@ -17,7 +17,7 @@ Browser
   ▼
 Next.js Route Handler (Node.js runtime)
   ├── lib/bazi.ts / zeri.ts / gua.ts  ← 用 lunar-typescript 立盘
-  ├── lib/skill.ts                    ← 加载 ../skill/references/*.md
+  ├── lib/skill.ts                    ← 加载 skill/references/*.md
   └── lib/vertex.ts                   ← @google-cloud/vertexai 流式生成
        ▲
        │  VERTEX_API_KEY (Express Mode)
@@ -56,7 +56,6 @@ cp .env.example .env.local
 ## 启动
 
 ```bash
-cd web
 npm install
 npm run dev
 # 打开 http://localhost:3000
@@ -83,7 +82,7 @@ API Key 模式部署到任何平台都很简单，只需把 `VERTEX_API_KEY` 设
 
 ## skill 工作原理
 
-`../skill/SKILL.md` 索引了 9 部经典，每部对应 `references/*.md` 一份节录。
+`skill/SKILL.md` 索引了 9 部经典，每部对应 `references/*.md` 一份节录。
 
 - `lib/skill.ts` 在不同 API 路由按需加载相关经典：
   - 八字 → 渊海子平 + 子平真诠 + 滴天髓 + 穷通宝典 + 千里命稿
